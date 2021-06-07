@@ -1,6 +1,7 @@
 body {
-  margin-right: 20%;
-  margin-left: 20%;
+  /* margin-right: 20%;
+  margin-left: 20%; */
+  margin-top: 10%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -12,7 +13,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.horned{
+/* .horned{
   
   
   text-align: center;
@@ -26,6 +27,15 @@ img{
   box-sizing: border-box;
   
 }
+
+/* h1{
+  text-align: center;
+}  */
 h1{
   text-align: center;
+  padding: 20px;
+  /* border-style: solid; */
+}
+.container{
+ padding: 20px;
 }

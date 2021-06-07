@@ -1,5 +1,39 @@
 # Getting Started with Create React App
 
+# This project is a bout building a horned beasts application that displays images and information of horned animals
+
+# Estimation of feature time needed
+
+## Number and name of feature: Feature #1: Display images
+
+## Estimate of time needed to complete: hour
+
+## Start time: took around hour
+
+## Finish time: took around hour
+
+## Actual time needed to complete: hour and a half 
+
+## Number and name of feature: Feature #2: Allow users to vote for their favorite beastv
+
+## Estimate of time needed to complete: half hour
+
+## Start time: took around hour
+
+## Finish time: took around hour
+
+## Actual time needed to complete: hour 
+
+## Number and name of feature: Feature Feature 3: Bootstrap
+
+## Estimate of time needed to complete: hour
+
+## Start time: took around hour
+
+## Finish time: took around hour
+
+## Actual time needed to complete: hour and a half 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -68,3 +102,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
