@@ -17,24 +17,32 @@ class SelectedBeast extends React.Component{
            
   //      }
   //  }
-   handleContentChange
+  //  handleContentChange
+ closing =()=>{
+  this.props.handleClose();
 
+ } 
   render(){
       return(
           <div>
             {/* show={this.props.showing}  */}
-      <Modal onHide={this.props.handleingClose}>
-        <Modal.Header >
-          <Modal.Title>{this.props.title}</Modal.Title>
+            {/* onHide={this.props.handleingClose} */}
+      <Modal  {...this.props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+       show={this.props.showing} onHide ={this.closing}>
+        <Modal.Header  closeButton>
+          <Modal.Title>{this.props.modalHeading}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <img src={this.props.link} alt={this.props.title} title={this.props.title}/>
+          <img src={this.props.modalImageLink} alt={this.props.modalHeading} title={this.props.modalHeading} style={{boxSizing:'border-box'}}/>
             
-            <p>{this.props.description}</p>
+            <p>{this.props.modalImageDescription}</p>
         </Modal.Body>
         <Modal.Footer>
-           
-          <Button variant="secondary" onClick={this.props.handleingClose}>
+        {/* onClick={this.props.handleingClose} */}
+          <Button variant="secondary" onClick ={this.closing}>
               
             Close
           </Button>

@@ -17,7 +17,7 @@ class HornedBeasts extends React.Component{
             
         })
         this.props.handleShow();
-        this.handleContentChange(this.props.title,this.props.description,this.props.link);
+        this.props.handleContentChange(this.props.title,this.props.description,this.props.link);
        
     }
     render(){

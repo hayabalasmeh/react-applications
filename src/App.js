@@ -14,18 +14,18 @@ class App extends React.Component{
         //   }
          this.state={
            showing:false,
-           heading:'',
-           imageDescription:'',
-           imageLink:'',
+           modalHeading:'',
+           modalImageDescription:'',
+           modalImageLink:'',
 
         //  }
     }
     }
     handleContentChange = (heading,imageDescription,imageLink)=>{
       this.setState({
-        heading:heading,
-        imageDescription:imageDescription,
-        imageLink:imageLink,
+        modalHeading : heading,
+        modalImageDescription : imageDescription,
+        modalImageLink : imageLink
 
       })
     }
@@ -49,7 +49,8 @@ class App extends React.Component{
       
      <Header />
      <Main showing={this.state.showing} sharedData={dataOfArr} handleShow={this.handleShow} handleClose={this.handleClose} handleContentChange={this.handleContentChange}/>
-     <SelectedBeast show={this.state.showing} sharedData={dataOfArr} handleShow={this.handleShow} handleClose={this.handleClose} handleContentChange={this.handleContentChange}/>
+     <SelectedBeast showing={this.state.showing} sharedData={dataOfArr} handleShow={this.handleShow} handleClose={this.handleClose} handleContentChange={this.handleContentChange} modalHeading={this.state.modalHeading} modalImageDescription={this.state.modalImageDescription}
+           modalImageLink={this.state.modalImageLink}/>
      <Footer />
      </div>
   
