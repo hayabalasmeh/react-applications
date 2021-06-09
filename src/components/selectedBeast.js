@@ -7,34 +7,30 @@ import Modal from 'react-bootstrap/Modal';
 class SelectedBeast extends React.Component{
     
 
-   constructor(props){
-       super(props);
-       this.state={
-           heading:'h',
-           imageLink:'h',
-           imageDescription:'h',
-        //    open:this.props.showing,
+  //  constructor(props){
+  //      super(props);
+  //      this.state={
+  //          heading:'h',
+  //          imageLink:'h',
+  //          imageDescription:'h',
+  //       //    open:this.props.showing,
            
-       }
-   }
-//    changingContent = ()=>{
-//        this.setState({
-//         open:
-//        })
-      
-//    }
+  //      }
+  //  }
+   handleContentChange
 
   render(){
       return(
           <div>
-            
-      <Modal show={this.props.showing} onHide={this.props.handleingClose}>
+            {/* show={this.props.showing}  */}
+      <Modal onHide={this.props.handleingClose}>
         <Modal.Header >
-          <Modal.Title>{this.state.heading}</Modal.Title>
+          <Modal.Title>{this.props.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            {this.state.imageLink}
-            <p>{this.state.imageDescription}</p>
+          <img src={this.props.link} alt={this.props.title} title={this.props.title}/>
+            
+            <p>{this.props.description}</p>
         </Modal.Body>
         <Modal.Footer>
            

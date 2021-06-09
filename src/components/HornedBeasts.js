@@ -16,6 +16,8 @@ class HornedBeasts extends React.Component{
             numOfFav:this.state.numOfFav +1
             
         })
+        this.props.handleShow();
+        this.handleContentChange(this.props.title,this.props.description,this.props.link);
        
     }
     render(){

@@ -13,10 +13,21 @@ class App extends React.Component{
         //    data:dataOfArr
         //   }
          this.state={
-           showing:false
+           showing:false,
+           heading:'',
+           imageDescription:'',
+           imageLink:'',
 
         //  }
     }
+    }
+    handleContentChange = (heading,imageDescription,imageLink)=>{
+      this.setState({
+        heading:heading,
+        imageDescription:imageDescription,
+        imageLink:imageLink,
+
+      })
     }
     handleShow = ()=>{
       this.setState(
@@ -37,8 +48,8 @@ class App extends React.Component{
       <div>
       
      <Header />
-     <Main showing={this.state.showing} sharedData={dataOfArr} handelingShow={this.handleShow} handleingClose={this.handleClose}/>
-     <SelectedBeast show={this.state.showing} sharedData={dataOfArr} handelingShow={this.handleShow} handleingClose={this.handleClose} />
+     <Main showing={this.state.showing} sharedData={dataOfArr} handleShow={this.handleShow} handleClose={this.handleClose} handleContentChange={this.handleContentChange}/>
+     <SelectedBeast show={this.state.showing} sharedData={dataOfArr} handleShow={this.handleShow} handleClose={this.handleClose} handleContentChange={this.handleContentChange}/>
      <Footer />
      </div>
   
