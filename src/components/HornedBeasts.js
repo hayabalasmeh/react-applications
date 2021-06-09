@@ -14,7 +14,9 @@ class HornedBeasts extends React.Component{
     incrementNumOfFav = () =>{
         this.setState({
             numOfFav:this.state.numOfFav +1
+            
         })
+       
     }
     render(){
         return(
@@ -26,7 +28,7 @@ class HornedBeasts extends React.Component{
                 <p>Choose it as My Favorite: {this.state.numOfFav}</p>
                 // <button>See More of this</button> */}
 
-                 <Card style={{ width: '18rem' }}>
+                 <Card style={{ width: '18rem' }} >
                     <Card.Img onClick={this.incrementNumOfFav} src={this.props.link} alt={this.props.title} title={this.props.title} />
                     <Card.Body>
                         <Card.Title>{this.props.title}</Card.Title>
