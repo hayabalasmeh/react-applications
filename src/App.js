@@ -5,6 +5,8 @@ import Main from './components/Main';
 import SelectedBeast from './components/selectedBeast';
 import dataOfArr from './components/data.json';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 class App extends React.Component{
 
     constructor(props){
@@ -43,14 +45,17 @@ class App extends React.Component{
         }
       )
     }
+    //Got some help from Anas Al-ramahi
   render(){
     return(
       <div>
       
      <Header />
+     
      <Main showing={this.state.showing} sharedData={dataOfArr} handleShow={this.handleShow} handleClose={this.handleClose} handleContentChange={this.handleContentChange}/>
      <SelectedBeast showing={this.state.showing} sharedData={dataOfArr} handleShow={this.handleShow} handleClose={this.handleClose} handleContentChange={this.handleContentChange} modalHeading={this.state.modalHeading} modalImageDescription={this.state.modalImageDescription}
            modalImageLink={this.state.modalImageLink}/>
+      
      <Footer />
      </div>
   

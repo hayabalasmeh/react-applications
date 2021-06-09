@@ -2,6 +2,7 @@
 
 # This project is a bout building a horned beasts application that displays images and information of horned animals
 
++ lab02
 # Estimation of feature time needed
 
 ## Number and name of feature: Feature #1: Display images
@@ -33,6 +34,16 @@
 ## Finish time: took around hour
 
 ## Actual time needed to complete: hour and a half 
+
++ lab03
+## Number and name of feature: Feature #1: Display a Modal
+
+## Estimate of time needed to complete: 1 day
+
+## Start time:yesterday
+
+## Finish time: today
+## Actual time needed to complete: 1 day
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
